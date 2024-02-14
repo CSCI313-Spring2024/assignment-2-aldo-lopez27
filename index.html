@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/components/navbar/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color: black;">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="styles.css">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#" onclick="showSection('about')">About Me</a>
+      <a class="nav-item nav-link" href="#" onclick="showSection('schedule')">Schedule</a>
+      <a class="nav-item nav-link" href="#" onclick="showSection('favorites')">Favorites</a>
+      <a class="nav-item nav-link" href="#" onclick="showSection('hobbies')">Hobbies</a>
+    </div>
+  </div>
+</nav>
+
+<div id="about" class="container mt-4">
+    <h2 style="color:rgb(255, 255, 255);" ><b>About Me</b></h2>
+    <h4 style="color:rgb(255, 255, 255);">Name</h4>
+    <p style="color:rgb(255, 255, 255);">Aldo Lopez</p>
+    <h4 style="color:rgb(255, 255, 255);">Major</h4>
+    <p style="color:rgb(255, 255, 255);">Computer Science</p>
+<div class="bio-container">
+    <img src="C:\Users\aldo1\Desktop\CSCI313\assignment-2-aldo-lopez27\Images\sky.CR2" alt="Sky" width="400" height="400">
+    <h4 style="color:rgb(255, 255, 255);">Biography</h4>
+    <p style="color:rgb(255, 255, 255);">I am Mexican American that was raised in Minto North Dakota. I was rasied by my parents, my two sisters, and two brothers since I am the youngest. I took an interest in code since I grew up playing video games with my siblings and got curious growing up what was behind all the software that I use on a daily scale. I decided to pursue my computer science degree at NDSU because of the Choral Festival that I used to attend in high school and to spite two of siblings that both went UND. My favorite things to do range from playing video games to playing sports with friends. I also enjoy playing/learning music and reading books. I always do this when I am not doing homework or learning more on code. </p>
+</div>
+</div>
+
+<div id="schedule" class="container mt-4" style="display: none;">
+    <h2 style="color:rgb(255, 255, 255);">Schedule</h2>
+    <table style="color:rgb(255, 255, 255);">
+        <tr>
+          <th>Sunday</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+        <tr>
+          <td>9:00 - 4:00 Homework </td>
+          <td>11:00 - 11:50 Software Dev. with Frameworks</td>
+          <td>11:00 - 12:15 Comparative Programming Lang.</td>
+          <td>11:00 - 11:50 Software Dev. with Frameworks</td>
+          <td>11:00 - 12:15 Comparative Programming Lang.</td>
+          <td>11:00 - 11:50 Software Dev. with Frameworks</td>
+          <td>9:00 - 4:00 Homework </td>
+        </tr>
+        <tr>
+          <td>4:00 - 8:00 Hobbies</td>
+          <td>3:00 - 3:50 Introduction to Unix</td>
+          <td>12:30 - 1:45 Theoretical Computer Science</td>
+          <td>3:00 - 3:50 Introduction to Unix</td>
+          <td>12:30 - 1:45 Theoretical Computer Science</td>
+          <td>3:00 - 3:50 Introduction to Unix</td>
+          <td>4:00 - 8:00 Hobbies</td>
+        </tr>
+      </table>
+</div>
+
+<div id="favorites" class="container mt-4" style="display: none;">
+    <h2 style="color:rgb(255, 255, 255);">Favorites</h2>
+    <h4 style="color:rgb(255, 255, 255);">Favorite Websites</h4>
+    <ul id = "favorite-websites-list" style="color:rgb(255, 255, 255);">
+        <li><a href="https://www.amazon.com/">Amazon</a></li>
+        <li><a href="https://www.youtube.com/">YouTube</a></li>
+        <li><a href="https://open.spotify.com/">Spotify</a></li>
+    </ul>
+    <h4 style="color:rgb(255, 255, 255);">Favorite Movies</h4>
+    <ul id="favorite-movies-list" style="color:rgb(255, 255, 255);">
+        <li>Transformer Movies Series</li>
+        <li>Greece</li>
+        <li>Cars</li>
+        <li>Jaws</li>
+        <li>The Notebook</li>
+        <li>Nightmare Before Christmas</li>
+    </ul>
+    <h4 style="color:rgb(255, 255, 255);">Favorite Books</h4>
+    <ul id="favorite-books-list" style="color:rgb(255, 255, 255);">
+        <li>Hacket</li>
+        <li>The Outsiders</li>
+        <li>A Seven Realms Book Series</li>
+        <li>The Call Cthulhu</li>
+    </ul>
+   
+</div>
+<div id="hobbies" class="container mt-4" style="display: none;">
+    <h2 style="color:rgb(255, 255, 255);">Video Games</h2>
+    <img id="gaming_picture" src="C:\Users\aldo1\Desktop\CSCI313\assignment-2-aldo-lopez27\Images\gaming.jpg" alt="" height="200" width="200">
+    <ol style="color:rgb(255, 255, 255);">
+        <li>Warframe</li>
+        <li>Mario Kart</li>
+        <li>Smite</li>
+        <li>Rainbow Six Siege</li>
+        <li>Just Dance</li>
+    </ol>
+
+    <h2 style="color:rgb(255, 255, 255);">Favorite Cooking Recipes</h2>
+    <img id="mole_picture" src="C:\Users\aldo1\Desktop\CSCI313\assignment-2-aldo-lopez27\Images\mole.jpg" alt="" height="125" width="100">
+    <ol style="color:rgb(255, 255, 255);">
+
+        <li>Mole</li>
+        <li>Boneless Wings</li>
+        <li>Burritos</li>
+        <li>Orange Rice</li>
+        <li>Orange Chicken</li>
+    </ol>
+
+    <h2 style="color:rgb(255, 255, 255);">Favorite kinds of Pictures to Take</h2>
+    <ol style="color:rgb(255, 255, 255);" >
+        <li>Nature</li>
+        <img id ="sunset_picture" src="C:\Users\aldo1\Desktop\CSCI313\assignment-2-aldo-lopez27\Images\sunsetpicture.jpg" alt="" height="200" width="200">
+        <li>People</li>
+        <li>Sky</li>
+        <li>Street Signs</li>
+        <li>Sunsets</li>
+
+    </ol>
+
+
+    <h2 style="color:rgb(255, 255, 255);">Favorite Musical Hobbies</h2>
+    <ol style="color:rgb(255, 255, 255);"> 
+        <li>Singing</li>
+        <li>Playing Piano</li>
+        <img id ="music_picture" src="C:\Users\aldo1\Desktop\CSCI313\assignment-2-aldo-lopez27\Images\music.jpg" alt="" height="200" width="200"> 
+        <li>Playing Guitar</li>
+        <li>Playing Ukulele</li>
+    </ol>
+
+    
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function showSection(sectionId) {
+        
+        document.querySelectorAll('.container').forEach(function(el) {
+            el.style.display = 'none';
+        });
+
+    
+        document.getElementById(sectionId).style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
