@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+.bio-container {
+    overflow: hidden;
+}
+
+
+.bio-container img {
+   
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+}
+
+
+
+html, body{
+    height: 100%;
+    background-color: #000000;
+    border: 1px solid rgb(255, 255, 255); 
+
+ }
+
+
+.container {
+    background-color: #000000;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+
+.navbar {
+    background-color: #f82121; 
+    height: 60px; 
+    
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #555; 
+}
+
+
+.navbar-nav .nav-link:hover {
+    background-color: #000000; 
+}
+h4{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-family: Papyrus;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+h2 {
+    color: #333; 
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+p {
+    
+    background-color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6; 
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 20px 0; 
+}
+
+#gaming_picture{
+    float: right;
+    max-width: 200px; 
+}
+#mole_picture{
+    float: right;
+    max-width: 200px; 
+}
+#sunset_picture{
+    float: right;
+    max-width: 200px; 
+}
+#music_picture{
+    float: right;
+    max-width: 200px; 
+}
+
+
+
+ol{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 20px;
+}
+
+
+table {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+}
+
+th, td {
+    border: 1px solid #393bca; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+@counter-style anchor {
+    system: cyclic;
+    symbols: "\2693";
+    suffix: " ";
+  }
+
+  @counter-style snowman{
+    system: cyclic;
+    symbols: "\26C4";
+    suffix: " ";
+  }
+
+  @counter-style boat{
+    system: cyclic;
+    symbols: "\26F5";
+    suffix: " ";
+  }
+
+
+#favorite-websites-list {
+    list-style-type: anchor; 
+}
+
+
+#favorite-movies-list {
+    list-style-type: snowman; 
+}
+
+
+#favorite-books-list {
+    list-style-type: boat; 
+}
+
+
+ol, ul {
+    margin-left: 20px; 
+}
+
+a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; 
+    }
+}
