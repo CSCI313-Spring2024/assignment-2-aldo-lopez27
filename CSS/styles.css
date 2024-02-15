@@ -34,8 +34,9 @@ html, body{
 
 
 .navbar {
-    background-color: #333; 
+    background-color: #f82121; 
     height: 60px; 
+    
 }
 
 .navbar-nav .nav-link:hover {
